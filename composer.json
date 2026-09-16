@@ -1,0 +1,48 @@
+{
+    "name": "jpsantosbembe/laravel-ai-budget",
+    "description": "Cost-governed LLM execution for Laravel: per-profile spend ceilings enforced before the call, model fallback, JSON Schema validation with one re-ask, and real cost accounting per run.",
+    "keywords": ["laravel", "llm", "ai", "openrouter", "cost", "budget", "governance", "pipeline"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "João Bembe",
+            "email": "jpbembe@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/bus": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bembe\\AiBudget\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bembe\\AiBudget\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bembe\\AiBudget\\AiBudgetServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
