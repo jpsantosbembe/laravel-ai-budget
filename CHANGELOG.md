@@ -24,3 +24,9 @@ this layer has been running since April 2026.
   accumulation.
 - `SubsetSchemaValidator` covering type, required, properties, items and enum,
   swappable through configuration.
+
+### Notes
+
+- Requires Laravel 12. Laravel 11 is not supported: every 11.x release is
+  currently flagged by a security advisory and Composer will not install it
+  under its default policy.

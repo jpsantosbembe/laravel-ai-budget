@@ -208,7 +208,12 @@ zero would quietly disable the ceiling for the models nobody registered.
 
 ## Requirements
 
-PHP 8.3+, Laravel 11 or 12. Works on PostgreSQL, MySQL and SQLite.
+PHP 8.3+ and Laravel 12, on PostgreSQL, MySQL or SQLite.
+
+Laravel 11 is deliberately not supported: as of this release every 11.x
+release carries an unresolved security advisory, so Composer refuses to
+install it under its default policy. Supporting a line you cannot install
+cleanly is a promise the package cannot keep.
 
 ## Testing
 
